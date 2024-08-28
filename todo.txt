@@ -1,6 +1,3 @@
-date selector
-  controlled form input
-  and this is used to set the context
 toggle whether the date selector is even visible with an unlabeled checkbox - default to off
 
 window/tab title
