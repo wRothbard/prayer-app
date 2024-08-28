@@ -1,9 +1,6 @@
 Host on github pages
 host on S3
 
-window/tab title
-favicon
-
 title for prayers, as a header
   stub
   select, based on date - values in prayers array become 2 element arrays
