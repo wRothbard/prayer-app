@@ -3,6 +3,7 @@ import { useState } from "react";
 import './App.css';
 import DowPrayer from './DowPrayer';
 import MissionPrayer from './MissionPrayer';
+import PeacePrayer from './PeacePrayer';
 
 import { LocalDate, ChronoUnit } from "@js-joda/core";
 
@@ -18,6 +19,7 @@ function App() {
         <input type="date" value={date.toString()} onChange={onChangeDate} />
         <DowPrayer dow={ date.dayOfWeek().value() % 7 }/>
         <MissionPrayer ndx={ mod4 }/>
+        <PeacePrayer ndx={ mod4 }/>
       </header>
     </div>
   );
