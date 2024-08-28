@@ -55,8 +55,8 @@ const prayers = [
 ];
 
 function Prayer() {
-  
-  const prayer_text = prayers[5];
+  const dow = new Date().getDay();
+  const prayer_text = prayers[dow];
   return <div class="Prayer"><p>{ prayer_text }</p></div>;
 }
 
