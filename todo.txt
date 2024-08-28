@@ -1,4 +1,3 @@
-turn day of week into a property, sent from app component
 date selector
   controlled form input
   and this is used to set the context

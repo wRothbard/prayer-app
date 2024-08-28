@@ -54,8 +54,7 @@ const prayers = [
   your people in heaven; through Jesus Christ our Lord. Amen.`,
 ];
 
-function Prayer() {
-  const dow = new Date().getDay();
+function Prayer({ dow }) {
   const prayer_text = prayers[dow];
   return <div class="Prayer"><p>{ prayer_text }</p></div>;
 }
