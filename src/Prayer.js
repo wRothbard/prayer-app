@@ -1,6 +1,7 @@
 const prayers = [
   // Sunday
   [ 'a collect for strength to await christ’s return',
+    'Sunday',
     `O God our King, by the resurrection of your Son Jesus Christ
     on the first day of the week, you conquered sin, put death to
     flight, and gave us the hope of everlasting life: Redeem all our
@@ -11,6 +12,7 @@ const prayers = [
 
   // Monday
   [ 'a collect for the renewal of life',
+    'Monday',
     `O God, the King eternal, whose light divides the day from the
     night and turns the shadow of death into the morning: Drive
     far from us all wrong desires, incline our hearts to keep your
@@ -21,6 +23,7 @@ const prayers = [
 
   // Tuesday
   [ 'a collect for peace',
+    'Tuesday',
     `O God, the author of peace and lover of concord, to know you
     is eternal life and to serve you is perfect freedom: Defend us,
     your humble servants, in all assaults of our enemies; that we,
@@ -29,6 +32,7 @@ const prayers = [
 
   // Wednesday
   [ 'a collect for grace',
+    'Wednesday',
     `O Lord, our heavenly Father, almighty and everlasting God, you
     have brought us safely to the beginning of this day: Defend us
     by your mighty power, that we may not fall into sin nor run into
@@ -37,6 +41,7 @@ const prayers = [
 
   // Thursday
   [ 'a collect for guidance',
+    'Thursday',
     `Heavenly Father, in you we live and move and have our being:
     We humbly pray you so to guide and govern us by your Holy
     Spirit, that in all the cares and occupations of our life we may
@@ -45,6 +50,7 @@ const prayers = [
 
   // Friday
   [ 'a collect for endurance',
+    'Friday',
     `Almighty God, whose most dear Son went not up to joy but
     first he suffered pain, and entered not into glory before he was
     crucified: Mercifully grant that we, walking in the way of the
@@ -53,6 +59,7 @@ const prayers = [
 
   // Saturday
   [ 'a collect for sabbath rest',
+    'Saturday',
     `Almighty God, who after the creation of the world rested from
     all your works and sanctified a day of rest for all your creatures:
     Grant that we, putting away all earthly anxieties, may be duly
@@ -62,8 +69,8 @@ const prayers = [
 ];
 
 function Prayer({ dow }) {
-  const [ title_text, prayer_text ] = prayers[dow];
-  return <div class="Prayer"><h3>{ title_text }</h3><p>{ prayer_text }</p></div>;
+  const [ title_text, day_text, prayer_text ] = prayers[dow];
+  return <div class="Prayer"><h3>{ title_text }</h3><h4>{ day_text }</h4><p>{ prayer_text }</p></div>;
 }
 
 export default Prayer;
