@@ -1,0 +1,8 @@
+obtain day of week from context
+  app sets initial/default day of week in context
+date selector
+  controlled form input
+  and this is used to set the context
+
+window/tab title
+favicon
