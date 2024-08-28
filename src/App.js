@@ -4,19 +4,16 @@ import logo from './logo.svg';
 import './App.css';
 import Prayer from './Prayer';
 
+import { LocalDate } from "@js-joda/core";
+
 function App() {
-  const [date, setDate] = useState(new Date());
-  const onChange = (evt) => {
-    setDate(new Date(evt.target.value));
-    console.log(evt.target.value);
-    console.log(date);
-    console.log(date.toISOString().substring(0, 10));
-  }
+  const [date, setDate] = useState(LocalDate.now());
+  const onChange = (evt) => setDate(LocalDate.parse(evt.target.value));
   return (
     <div className="App">
       <header className="App-header">
-        <input type="date" value={date.toISOString().substring(0, 10)} onChange={onChange} />
-        <Prayer dow={ date.getDay() }/>
+        <input type="date" value={date.toString()} onChange={onChange} />
+        <Prayer dow={ date.dayOfWeek().value() % 7 }/>
       </header>
     </div>
   );
