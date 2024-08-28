@@ -1,7 +1,6 @@
 Host on github pages
 host on S3
 
-prayer for mission
-  Refactor Prayer into Prayer and DowPrayer
-  Prayer should have Title and Text, look at how Buttons done in prev. examples to show how subclasses should supply info and settings and style
-  days since Jan 1, 2019, mod 4
+bold all the Amen.'s
+
+prayer for peace
