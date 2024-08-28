@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <input type="checkbox" />
         <input type="date" value={date.toString()} onChange={onChange} />
         <Prayer dow={ date.dayOfWeek().value() % 7 }/>
       </header>
